@@ -1,0 +1,24 @@
+{
+  "name": "cg-trader-3d",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Mersad Z.",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^12.2.0",
+    "mocha": "^10.2.0",
+    "npx": "^10.2.2"
+  },
+  "devDependencies": {
+    "cypress-multi-reporters": "^1.6.2",
+    "mocha-junit-reporter": "^2.2.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.2.2",
+    "mochawesome-report-generator": "^6.2.0"
+  }
+}

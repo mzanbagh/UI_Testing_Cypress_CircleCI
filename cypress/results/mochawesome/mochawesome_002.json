@@ -1,0 +1,164 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-01-03T21:02:59.516Z",
+    "end": "2023-01-03T21:03:07.354Z",
+    "duration": 7838,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "66356980-25fe-4c31-bff8-e20ea3f1672a",
+      "title": "",
+      "fullFile": "cypress/e2e/Product_Image.cy.js",
+      "file": "cypress/e2e/Product_Image.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "cdee8f3f-1559-4475-a159-590d1e2a957a",
+          "title": "Product Page - Image Existence",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify the main image is alive ",
+              "fullTitle": "Product Page - Image Existence Verify the main image is alive ",
+              "timedOut": null,
+              "duration": 2435,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('div.product-carousel__image > img').scrollIntoView().should('have.attr', 'src');",
+              "err": {},
+              "uuid": "92709fd5-863c-4d3d-8d59-316f896784d8",
+              "parentUUID": "cdee8f3f-1559-4475-a159-590d1e2a957a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verrify sub image alive & CSS height:75",
+              "fullTitle": "Product Page - Image Existence Verrify sub image alive & CSS height:75",
+              "timedOut": null,
+              "duration": 1984,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('ul > li:nth-child(1) > img').scrollIntoView().should('have.attr', 'height', '75');",
+              "err": {},
+              "uuid": "4a1eab79-8c06-4ca4-8e0a-d83eee691890",
+              "parentUUID": "cdee8f3f-1559-4475-a159-590d1e2a957a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Veify right arrow 1 of 2 svg on sub image section",
+              "fullTitle": "Product Page - Image Existence Veify right arrow 1 of 2 svg on sub image section",
+              "timedOut": null,
+              "duration": 1628,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.control-next > svg > path').eq(0).should('have.attr', 'fill', 'currentColor');",
+              "err": {},
+              "uuid": "919d418b-e724-4625-b153-cbd90d92be48",
+              "parentUUID": "cdee8f3f-1559-4475-a159-590d1e2a957a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Veify right arrow 2 of 2 svg on sub image section",
+              "fullTitle": "Product Page - Image Existence Veify right arrow 2 of 2 svg on sub image section",
+              "timedOut": null,
+              "duration": 1725,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.control-next > svg > path').eq(1).should('have.attr', 'fill', 'currentColor');",
+              "err": {},
+              "uuid": "9ca263ff-f4bb-4afc-8cb4-a1177409b37d",
+              "parentUUID": "cdee8f3f-1559-4475-a159-590d1e2a957a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "92709fd5-863c-4d3d-8d59-316f896784d8",
+            "4a1eab79-8c06-4ca4-8e0a-d83eee691890",
+            "919d418b-e724-4625-b153-cbd90d92be48",
+            "9ca263ff-f4bb-4afc-8cb4-a1177409b37d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7772,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

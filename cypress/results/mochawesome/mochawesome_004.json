@@ -1,0 +1,145 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-01-03T21:03:21.406Z",
+    "end": "2023-01-03T21:03:25.594Z",
+    "duration": 4188,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "18e5c689-361c-4511-ba00-7b42f74de558",
+      "title": "",
+      "fullFile": "cypress/e2e/Site_Info.cy.js",
+      "file": "cypress/e2e/Site_Info.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "75704f70-24fe-44d2-a272-ce2baebbc413",
+          "title": "Product Page - URL & Title Verification",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "URL to Contain jet *env-value",
+              "fullTitle": "Product Page - URL & Title Verification URL to Contain jet *env-value",
+              "timedOut": null,
+              "duration": 1324,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.url().should('contain', Cypress.env('name'));\n// {decode:true}).should('contain','3D')",
+              "err": {},
+              "uuid": "bb0fb1a9-4ce6-46da-be5e-fb648fb4eadb",
+              "parentUUID": "75704f70-24fe-44d2-a272-ce2baebbc413",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Page Sub Title 3D Model details",
+              "fullTitle": "Product Page - URL & Title Verification Page Sub Title 3D Model details",
+              "timedOut": null,
+              "duration": 1213,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.model-details > .heading-20').scrollIntoView().should('include.text', '3D Model details');",
+              "err": {},
+              "uuid": "c1fa7c16-eba1-4b18-832c-56796a4fb42a",
+              "parentUUID": "75704f70-24fe-44d2-a272-ce2baebbc413",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "UNDER CONST",
+              "fullTitle": "Product Page - URL & Title Verification UNDER CONST",
+              "timedOut": null,
+              "duration": 1593,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "20c4209b-f6a2-43df-a03b-634a5e92fbed",
+              "parentUUID": "75704f70-24fe-44d2-a272-ce2baebbc413",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "bb0fb1a9-4ce6-46da-be5e-fb648fb4eadb",
+            "c1fa7c16-eba1-4b18-832c-56796a4fb42a",
+            "20c4209b-f6a2-43df-a03b-634a5e92fbed"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4130,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
