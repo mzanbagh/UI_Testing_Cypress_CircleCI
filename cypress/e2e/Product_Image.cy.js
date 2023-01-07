@@ -1,6 +1,4 @@
-
 /// <reference types="Cypress" />
-
 describe('Product Page - Image Existence', () => {
     before(() => {
         Cypress.on('uncaught:exception', (err, runnable) => { return false })

@@ -1,6 +1,4 @@
-
 /// <reference types="Cypress" />
-
 describe('Product Page - Verify Price Format & Alive ', () => {
     before(() => {
         Cypress.on('uncaught:exception', (err, runnable) => { return false })

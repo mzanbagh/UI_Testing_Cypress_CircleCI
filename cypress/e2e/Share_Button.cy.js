@@ -1,6 +1,5 @@
 
 /// <reference types="Cypress" />
-
 describe('Product Page - Share Button Alive & Functional', () => {
     before(() => {
         Cypress.on('uncaught:exception', (err, runnable) => { return false })
@@ -14,7 +13,7 @@ describe('Product Page - Share Button Alive & Functional', () => {
             .click()
             .then(() => {
                 cy.get('.form-inline > .form-control')
-                    .should('have.attr', 'value')
+                .should('have.attr', 'value')
             });  
     });
     it('Share Button Existence', () => {
