@@ -54,6 +54,6 @@ In this example, the pipeline first installs the necessary dependencies and then
 
 Overall, integrating Cypress with CircleCI can be a powerful way to automate and streamline your UI testing process and ensure that your application is fully tested and deployed with confidence.
 
-<img src="Scrrenshot.png" alt="Circle CI UI" width="700"/>
+<img src="Screenshot.png" alt="Circle CI UI" width="700"/>
 
 ---
